@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  background-color: bisque;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#title,
+#author,
+#read {
+  max-width: 33%;
+  height: 1rem;
+}
+
+hr {
+  color: beige;
+  max-width: 75%;
+}
+
+.scroll {
+  width: 680px;
+  height: 400px;
+  max-height: 400px;
+  padding: 5px;
+  background-color: antiquewhite;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+tr {
+  width: 100%;
+}
+
+#library {
+  display: flex;
+}
+
+#table {
+  justify-content: flex-start;
+  min-width: 680px;
+  max-height: 50px;
+  margin: 2rem;
+  border: 2px solid beige;
+}
+
+table td {
+  vertical-align: top;
+}
+
+table tr {
+  max-height: 30px;
+}

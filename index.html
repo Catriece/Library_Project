@@ -1,64 +1,55 @@
-<!-- practice
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Library Project</title>
   </head>
   <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
+    <main>
       <div>
         <h1>Library Project</h1>
-        <form action="" id="form">
+        <form id="inputForm">
           <div class="form-group">
             <label for="title">Title: </label><input type="text" name="title" id="title" placeholder="Title" required></div>
+            <br />
           <div class="form-group">
             <label for="author">Author: </label><input type="text" name="author" id="author" placeholder="Author" required></div>
+            <br />
           <div class="form-group">
             <label for="read">Read</label><input type="checkbox" name="read" id="read" /></div>
+            
           <div class="form-group">
             <button id="submitBtn" type="submit">Submit</button></div>
+            <hr />
         </form>
         <div id="library">
-          <!-- Add table here --!>
-          <table id="table" style="min-width: 680px; margin: 2rem">
+          <!-- Add table here -->
+          <table id="table">
             <thead>
               <tr>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Read</th>
+                <th>Delete Book</th>
               </tr>
             </thead>
-            <tbody id="tableBody">
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-                <td><button id="remove">Remove</button></td>
-              </tr>
-            </tbody>
+            <!-- <div class="scroll"> -->
+              <tbody id="tableBody" class="scroll">
+                <tr id="bookRow1">
+                  <td id="titleEx">Name of the Wind</td>
+                  <td id="authorEx">Patrick Rothfuss</td>
+                  <td id="readEx">
+                    <input type="checkbox" name="read" id="readLibraryCheckbox" checked disabled />
+                  </td>
+                  <td><button >Remove</button></td>
+                </tr>
+              </tbody>
+            <!-- </div> -->
           </table>
         </div>
     </main>
-
-    <script src="app.js"></script>
   </body>
 </html>
-
--->
